@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root{
+    --soft-blue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+    --dark-blue-main-BG:hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White:hsl(0, 0%, 100%);
+    --paragraph-font-size:18px;
+    --font-family-outfit: https://fonts.google.com/specimen/Outfit;
+    --weights : 300,400,600 ; 
+}
+body{
+    background-color: var(--dark-blue-main-BG);
+    height: 100vh;
+}
+.card{
+    width: 310px;
+    background-color: var(--Very-dark-blue-card-BG);
+    height: 540px;
+    position: absolute;
+    top: 4% ;
+    left: 40%;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 1px 1px 13px 6px hsl(215deg 62% 1%);
+}
+.card figure{
+width: 100%;
+display: flex;
+justify-content: center;
+margin: 0;
+}
+.card figure img{
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card .icon {
+    position: absolute;
+    bottom: 69%;
+    font-size: 34px;
+    color: var(--White);
+    right: 43%;
+    display: none;
+}
+figure .filter{
+    position: absolute;
+    width: 85%;
+    height: 264px;
+    background-color:var(--cyan);
+    top: 21px;
+    opacity: 0%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+figure .picEffect:hover .icon {
+    display: block;
+}
+figure .picEffect:hover .filter{
+    opacity: 21%;
+}
+figcaption  h1{
+    color: var(--White);
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin:20px 24px 0px;
+    font-weight: 600;
+    word-spacing: .2px;
+    letter-spacing: 1px;
+}
+figcaption  h1:hover {
+    color: var(--cyan);
+}
+figcaption .Description {
+display: flex;
+    justify-content: start;
+    margin: 20px 24px 0px;
+    text-align: start;
+    color: var(--soft-blue);
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    word-spacing: 0px;
+}
+.upperFooter{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px;
+}
+.upperFooter div {
+    display: flex;
+    gap :10px
+}
+.upperFooter  i{
+    height: 28px;
+    line-height: 49px;
+}
+.upperFooter .footP1 p {
+    color: var(--cyan);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.upperFooter .footP1  i {
+    color: var(--cyan);
+}
+.upperFooter .footP2 p {
+    color: var(--soft-blue);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.upperFooter .footP2   i {
+    color: var(--soft-blue);
+}
+.card hr{
+    width: 80%;
+    height: 2px;
+    border: 0;
+    background-color: var(--Very-dark-blue-line);
+}
+footer{
+margin-top: 20px;
+    width: 90%;
+    display: flex;
+    gap: -4px;
+    justify-content: space-evenly;
+    margin-right: 40px;
+
+}
+footer p {
+    color: var(--soft-blue);
+    font-family: sans-serif;
+    height: 4px;
+    line-height: 4px;
+    font-weight: 500;
+    font-size: 13.5px;
+    letter-spacing: 1px;
+
+}
+footer p span{
+    color: var(--White);
+}
+footer p span:hover{
+    color: var(--cyan);
+}
+footer img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--White);
+}
+.signature{
+    position: absolute;
+    font-size: 12px;
+    bottom: 0;
+    font-family: sans-serif;
+    color: var(--soft-blue);
+    left: 10px;
+}
+.signature span{
+    color: var(--cyan);
+}
